@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda pagina responsive</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #2b6cb0;
+            color: white;
+        }
+        nav{background: #e2e8f0;
+        }
+                footer{
+            background: #2b6cb0;
+            color: white;
+            text-align: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+        .caja{
+            background: #f7fafc;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        @media (max-width: 700px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+        nav a{
+            margin-right: 10px;
+            text-decoration: none; 
+            color: #1a202c;
+        }
+    </style>
+    <header>
+        <h1>Mi web responsive - Edgar molina</h1>
+        <p>Ejemplo simple usando grid</p>
+    </header>
+    <nav>
+        <a href="#">inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Acerca</a>
+    </nav>
+    <main>
+        <div class="grid">
+            <article class="caja">
+                <h2>Artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis suscipit voluptates necessitatibus earum atque accusamus ut vero possimus nisi. Ipsum voluptatum numquam quidem cum molestiae voluptas. Adipisci, qui deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut dolorum animi, corporis quam repellendus expedita, nobis soluta consectetur ex facere suscipit, dolores odit iusto molestiae maxime facilis voluptates alias?</p>
+            </article>
+
+            <article class="caja">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit deleniti qui esse rem id ipsa veniam necessitatibus ipsum, veritatis dolores deserunt, vero maiores reiciendis repellat eos, aliquam quia fuga animi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta consequatur laudantium. Esse, blanditiis odit eaque error veritatis modi voluptatibus inventore impedit hic, nulla at quod neque corporis ipsam. Similique.</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Footer - ejemplo con Grid</p>
+    </footer>
+</body>
+</html>

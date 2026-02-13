@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi preimer pagina web responsive</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #333;
+            color: white;
+        }
+        nav{background: #eee;
+        }
+        footer{
+            background: #333;
+            color: #eee;
+            text-align: center;
+        }
+        /* Contenedor  principla */
+        .contenedor{
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+        }
+        .col{
+            background: #f6f6f6;
+            padding: 15px;
+            flex: 1;
+            box-shadow: 5px 5px rgb(92, 86, 86);
+        }
+        @media (max-width: 700px){
+            .contenedor{
+                flex-direction: column;
+            }
+        }
+        nav a{
+            margin-right: 10px;
+            margin-left: 20%;
+            text-decoration: none; 
+            color: #333;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            background-color: gray;
+        }
+        img{
+           max-width: 100%;
+           height: auto;
+           display: block;
+        }
+    </style>
+    <header>
+        <h1>Mi web responsive Edagr Molina</h1>
+        <p>Ejemplo simple para entender responsive</p>
+    </header>
+
+    <nav>
+        <a href="#">inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="contenedor">
+            <section class="col">
+                <h2>Seccion 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, ex ad voluptate temporibus necessitatibus cum cumque asperiores eum quasi ea facere quae quaerat et nesciunt deserunt doloribus commodi laudantium numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus laboriosam expedita molestiae tenetur asperiores vero nostrum, dolores molestias hic, exercitationem aliquid. Quaerat, fugiat veniam dignissimos labore esse illo ullam.</p>
+                <img src="https://polvora.com.mx/wp-content/uploads/2021/01/Limp-Bizkit-la-historia-detras-de-sus-videos.jpg" alt="Limp-Bizkit">
+            </section>
+
+            <section class="col">
+                <h2>Seccion 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquam a neque rem et doloremque corporis, officia eligendi veritatis vitae cumque dolor, ducimus molestias iusto dicta fugit enim aliquid tempore.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi debitis id sapiente vitae corporis tenetur in voluptas rem, asperiores sint vel praesentium quasi. Nobis sint porro, voluptate maiores voluptatem accusantium.</p>
+                <img src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2019/07/d03c1fa-slipknot.jpg" alt="slipknot">
+            </section>
+           
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 - Ejemplo sencillo
+        </p>
+    </footer>
+</body>
+</html>
